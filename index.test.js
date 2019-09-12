@@ -33,4 +33,8 @@ describe('Determine age based on birthday', () => {
   test('Returns 0 if birthday is 15 Sep 2017', () => {
     expect(birthday.howOld(new Date('15 Sep 2017'))).toBe(0);
   });
+
+  test('Returns -1 if birthday is 01 Jan 2019', () => {
+    expect(birthday.howOld(new Date('01 Jan 2019'))).toBe(-1);
+  });
 });
